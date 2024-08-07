@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calc_body">
+        <div id="functions">
+            <button id="unit_convert_btn" aria-label="Unit Convert">
+                <img src="https://cdn-icons-png.flaticon.com/512/58/58477.png" alt="Unit Convert">
+            </button>
+        </div>
+        <input type="text" id="display" readonly aria-label="Display" />
+        <div class="calculator_buttons">
+            <br>
+            <button type="button" aria-label="Clear">AC</button>
+            <button type="button" aria-label="Plus/Minus">+/-</button>
+            <button type="button" aria-label="Percent">%</button>
+            <button type="button" aria-label="Division">/</button>
+            <br>
+            <button type="button" aria-label="7">7</button>
+            <button type="button" aria-label="8">8</button>
+            <button type="button" aria-label="9">9</button>
+            <button type="button" aria-label="Multiplication">x</button>
+            <br>
+            <button type="button" aria-label="4">4</button>
+            <button type="button" aria-label="5">5</button>
+            <button type="button" aria-label="6">6</button>
+            <button type="button" aria-label="Minus">-</button>
+            <br>
+            <button type="button" aria-label="1">1</button>
+            <button type="button" aria-label="2">2</button>
+            <button type="button" aria-label="3">3</button>
+            <button type="button" aria-label="Plus">+</button>
+            <br>
+            <button type="button" aria-label="0" style="width: 135px;">0</button>
+            <button type="button" aria-label="Decimal">.</button>
+            <button id="equal" type="button" aria-label="Equal">=</button>
+            <br>
+        </div>
+        <div id="convert_section" style="display: none;">
+            <button class="convert_button" id="mass">Mass</button>
+            <button class="convert_button" id="height">Height</button>
+            <button class="convert_button" id="length">Length</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
