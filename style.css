@@ -7,8 +7,18 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(45deg, #ffffff, #cdeeff);
 }
-
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 #calc_body {
+    animation: dropDown 1s ease-in-out;
     text-align: center;
     display: inline-block;
     padding: 12px;
